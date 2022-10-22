@@ -5,7 +5,5 @@ text = f.read()
 #I used re.search first and found that it only match one but not all, so I switch to findall.
 #I tested strings with regex101 to check the range of seaching power with the expression. 
 match_phonenum = re.findall(r'[\+]?1\s[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}', text, re.M)
-if match_phonenum:
-    print (match_phonenum)
-else:
-    print ("No Match")
+for phone in match_phonenum:
+    print (phone)
