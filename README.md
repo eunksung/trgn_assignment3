@@ -1,13 +1,13 @@
-# trgn_assignment3
+# **trgn_assignment3**
 
 ## extract_phonenum.py
-#USAGE
+### USAGE
 python3 extract_phoneum.py phonenum_change.txt module: re
 
-#Objective
+### Objective
 Extract phone numbers from a text file, and prints formatted phone numbers.
 
-#Instruction
+### Instruction
 Copy/Paste a text from a website: https://www.moniker.com/company/news/announcement-of-phone-number-change. Save the file as text file.
 
 Create a script that read through the text file and search for telephone number within it.
@@ -16,7 +16,7 @@ In order to do that, I am going to load regex library, and I will use re.findall
 
 If there is no matching telephone numbers in text or different format of telephone numbers, it will print out "No Match" as I put if and elseif command in the script.
 
-#KNOWN ISSUE
+### KNOWN ISSUE
 This script is only able to extract telephone numbers in the U.S.. in a certain format, such as (+1) 3 digits area code (either with or without parenthesis) 3 digits number-4 digits number.
 If there is no space in telephone number to separate, then the script will not find the telephone number.
 
@@ -24,10 +24,10 @@ If there is no space in telephone number to separate, then the script will not f
 #USAGE
 ensg2hugo.py -f1 expression_analysis.csv mart_export_new.csv module: sys, fileinput, re, and csv
 
-#Objective
+### Objective
 Replace Ensemble name of the genes to HUGO name.
 
-#Instruction
+### Instruction
 Download expres.anal.csv from https://github.com/davcraig75/unit and rename it to expression_analysis.csv. This csv file contain Homo_Sapiens_GRch37.75 data.
 
 Download mart_export.txt from http://grch37.ensembl.org/biomart/martview/67524712e35798ea8e84d363103e0986 and convert it from text file to csv file by using a converter. After that, name it to mart_export.csv. This csv file contains Homo_Sapiens_GRch37.19 data.
@@ -44,17 +44,17 @@ Create a new csv file "expression_analysis_new.csv". This file is a hybrid of ex
 
 The expression_analysis_new.csv file contains Ensemble gene ID and HUGO gene name. In order to remove Ensemble gene ID, I use csv module in python. Along with csv function, I create a new file "expression_analysis_final.csv" which contains column 6, 2, 3, 4 of expression_analysis.new.csv. As result of that, I replace Ensemble gene ID to HUGO gene name.
 
-#known issue
+### known issue
 Because mart_export_new.csv contains Homo_Sapiens_GRch37.19 data, there are non-matching Ensemble gene IDs with HUGO gene name. This results in blanks on Gene name column in expression_analysis.new.csv.
 
 ## histogram.py
-#Usage
+### Usage
 python3 histogram.py -f5 us-counties.csv pandas matplotlib
 
-#Objective
+### objective
 Create a histogram from a csv file using the specified column.
 
-#Instruction
+### Instruction
 Download a Covid-19 related data in csv form from https://github.com/nytimes/covid-19-data/blob/master/us-counties.csv
 
 Install pandas and matplotlib with Jupyter notebook to the directory where python located
