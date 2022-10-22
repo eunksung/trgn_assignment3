@@ -1,6 +1,7 @@
 # **trgn_assignment3**
 
 ## extract_phonenum.py
+
 ### USAGE
 python3 extract_phoneum.py phonenum_change.txt module: re
 
@@ -21,7 +22,8 @@ This script is only able to extract telephone numbers in the U.S.. in a certain 
 If there is no space in telephone number to separate, then the script will not find the telephone number.
 
 ## ensg2hugo.py
-# USAGE
+
+### USAGE
 ensg2hugo.py -f1 expression_analysis.csv mart_export_new.csv module: sys, fileinput, re, and csv
 
 ### Objective
@@ -48,6 +50,7 @@ The expression_analysis_new.csv file contains Ensemble gene ID and HUGO gene nam
 Because mart_export_new.csv contains Homo_Sapiens_GRch37.19 data, there are non-matching Ensemble gene IDs with HUGO gene name. This results in blanks on Gene name column in expression_analysis.new.csv.
 
 ## histogram.py
+
 ### Usage
 python3 histogram.py -f5 us-counties.csv pandas matplotlib
 
