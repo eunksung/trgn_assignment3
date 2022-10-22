@@ -21,7 +21,7 @@ This script is only able to extract telephone numbers in the U.S.. in a certain 
 If there is no space in telephone number to separate, then the script will not find the telephone number.
 
 ## ensg2hugo.py
-#USAGE
+# USAGE
 ensg2hugo.py -f1 expression_analysis.csv mart_export_new.csv module: sys, fileinput, re, and csv
 
 ### Objective
