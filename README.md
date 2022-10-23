@@ -58,7 +58,6 @@ python3 histogram.py -f5 us-counties.csv pandas matplotlib
 Create a histogram from a csv file using the specified column.
 
 ### Instruction
-Download a Covid-19 related data in csv form from https://github.com/nytimes/covid-19-data/blob/master/us-counties.csv
 
 Install pandas and matplotlib with Jupyter notebook to the directory where python located
 
