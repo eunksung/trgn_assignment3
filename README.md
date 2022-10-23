@@ -52,15 +52,17 @@ Because mart_export_new.csv contains Homo_Sapiens_GRch37.19 data, there are non-
 ## histogram.py
 
 ### Usage
-python3 histogram.py -f5 us-counties.csv pandas matplotlib
+python3 histogram.py pandas matplotlib
 
 ### objective
-Create a histogram from a csv file using the specified column.
+Create a histogram as a png from a csv file using the specified column.
 
 ### Instruction
 
 Install pandas and matplotlib with Jupyter notebook to the directory where python located
 
-Column "deaths" was chosen to create a histogram to see how many people has died mostly in a day from COVID-19.
+Column "deaths" was chosen to create a histogram to see how many people has died mostly in a day from COVID-19
 
 Put title and label x and y-aix. Also, set range for x-axis and y-aix in order to give more information with the histogram
+
+As you run histogram.py, histogram.png will be created in the same directory
