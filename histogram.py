@@ -1,4 +1,3 @@
-
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -11,4 +10,4 @@ histo_plot.set_ylabel('Frequency')
 
 plt.xlim([0, 1000])
 plt.ylim([0, 500000])
-plt.show()
+plt.savefig('histogram.png')
