@@ -70,3 +70,7 @@ Column "deaths" was chosen to create a histogram to see how many people has died
 Put title and label x and y-aix. Also, set range for x-axis and y-aix in order to give more information with the histogram
 
 As you run histogram.py, histogram.png will be created in the same directory
+
+### Known issue
+
+Install matplotlib if you have this message: ImportError: No module named matplotlib.pyplot
