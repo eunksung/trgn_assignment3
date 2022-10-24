@@ -24,7 +24,7 @@ If there is no space in telephone number to separate, then the script will not f
 ## ensg2hugo.py
 
 ### USAGE
-ensg2hugo.py -f1 expression_analysis.csv mart_export_new.csv module: sys, fileinput, re, and csv
+ensg2hugo.py -f1 expression_analysis.csv mart_export_new.csv module: sys, fileinput, re, csv, and pandas
 
 ### Objective
 Replace Ensemble name of the genes to HUGO name.
@@ -44,7 +44,9 @@ For the dictionary, the key will be Ensemble gene ID and value will be Ensemble 
 
 Create a new csv file "expression_analysis_new.csv". This file is a hybrid of expression_analysis.csv and mart_export.csv as I append the value from the dictionary to the file containing the key value.
 
-The expression_analysis_new.csv file contains Ensemble gene ID and HUGO gene name. In order to remove Ensemble gene ID, I use csv module in python. Along with csv function, I create a new file "expression_analysis_final.csv" which contains column 6, 2, 3, 4 of expression_analysis.new.csv. As result of that, I replace Ensemble gene ID to HUGO gene name.
+The expression_analysis_new.csv file contains Ensemble gene ID and HUGO gene name. In order to remove Ensemble gene ID, I use csv module in python. Along with csv function, I create a new file "expression_analysis_final.csv" which contains column 6 and 2 of expression_analysis.new.csv.
+
+Used pandas to load expression_analysis.new.csv to print the data frame
 
 ### known issue
 Because mart_export_new.csv contains Homo_Sapiens_GRch37.19 data, there are non-matching Ensemble gene IDs with HUGO gene name. This results in blanks on Gene name column in expression_analysis.new.csv.
