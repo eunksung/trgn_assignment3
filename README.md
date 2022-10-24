@@ -48,6 +48,8 @@ The expression_analysis_new.csv file contains Ensemble gene ID and HUGO gene nam
 
 Used pandas to load expression_analysis.new.csv to print the data frame
 
+There will be an SyntaxError: invalid syntax on line 24 if you are using old version of Python.
+
 ### known issue
 Because mart_export_new.csv contains Homo_Sapiens_GRch37.19 data, there are non-matching Ensemble gene IDs with HUGO gene name. This results in blanks on Gene name column in expression_analysis.new.csv.
 
