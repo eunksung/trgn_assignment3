@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import re
 ##load regex to the script which will help to search the telephone numbers in the text file.
 f = open('phonenum_change.txt','r')
